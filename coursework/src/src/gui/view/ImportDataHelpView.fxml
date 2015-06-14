@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="665.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="33.0" text="Import Data Help" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="98.0" text="This is the import data page which is used to choose a file to create the neural network with. On this page there are two buttons and a text field. The buttons are “Select File” and “Example Data”." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="272.0" fitWidth="400.0" layoutX="41.0" layoutY="188.0" pickOnBounds="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <image>
+            <Image url="@ImportDataViewImage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="469.0" text="The text field is used to choose delimiter of the file the default value for the text field is ‘,’ but you can change it if your file delimiter is different." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="535.0" text=" “Select file” Try to select data file from your computer! Formats ending with CSV and TXT could be used." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="587.0" text=" “Example data”, as it includes data file our software already set, if you don’t know what data to use, just try this example data and go ahead! " textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

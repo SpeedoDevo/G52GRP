@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.AdvancedInputAndOutputSelectionController">
+   <children>
+      <VBox AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Please select which columns are strings">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <ComboBox fx:id="stringNumRowSelection" onAction="#updateCheckBox">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <CheckBox fx:id="stringOrNum" mnemonicParsing="false" onAction="#toggleString" text="Does this column contain strings?" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+     <VBox alignment="CENTER" layoutX="50.0" layoutY="169.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="table" layoutX="64.0" layoutY="169.0" maxHeight="1.7976931348623157E308" prefHeight="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" VBox.vgrow="ALWAYS" />
+         </children>
+         </VBox>
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="1.0" layoutY="126.0" majorTickUnit="1.0" max="6.0" minorTickCount="0" prefHeight="14.0" prefWidth="700.0" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="50.0" layoutY="96.0" text="Input" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="155.0" />
+      <Label layoutX="562.0" layoutY="96.0" text="Expected Output" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <VBox alignment="CENTER" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="700.0" text="Advanced Import Data" textAlignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToAdvancedSelection" text="Next" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

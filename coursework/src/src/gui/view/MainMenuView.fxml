@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainMenuController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="49.0" prefWidth="714.0" text="Alfred" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="50.0" layoutY="233.0" mnemonicParsing="false" onAction="#goToImportData" text="GET STARTED" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="216.0" layoutY="300.0" mnemonicParsing="false" onAction="#loadNN" text="Load Neural Network" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="216.0" layoutY="372.0" mnemonicParsing="false" onAction="#loadTutorial" prefHeight="57.0" prefWidth="600.0" text="Tutorial" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

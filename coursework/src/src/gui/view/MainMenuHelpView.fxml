@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane  prefHeight="665.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="44.0" text="Main Menu Help" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="122.0" text="This is the main menu page on this page there are three main buttons. These buttons are “GET STARTED”, “Load Neural Network” and “Tutorial”. " textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="289.0" fitWidth="400.0" layoutX="41.0" layoutY="188.0" pickOnBounds="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <image>
+            <Image url="@MainMenuViewImage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="483.0" text="The “GET STARTED” button is used to create a new neural network for you to train." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="533.0" text="The “Load Neural Network” allow you to import a previously made neural network that was saved at the end of the training process." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="603.0" text="The “Tutorial” button will load up a detailed help screen so you can learn how to use this program." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

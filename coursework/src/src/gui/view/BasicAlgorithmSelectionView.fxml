@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.BasicAlgorithmSelectionController">
+   <children>
+      <Label alignment="CENTER" layoutY="100.0" prefHeight="58.0" prefWidth="700.0" text="Suggested Settings" textAlignment="JUSTIFY" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" onAction="#algoChange" prefHeight="74.0" prefWidth="660.0" promptText="Choose a suggested algorithm" visibleRowCount="5" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0" />
+      <Button fx:id="next" layoutX="509.0" layoutY="393.0" mnemonicParsing="false" onAction="#goToEndResults" text="Next" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Button>
+      <AnchorPane fx:id="rbfSettings" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="260.0">
+         <children>
+            <TextField fx:id="clusters" onKeyReleased="#clusterFieldChange" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
+            <Label fx:id="labelClusters" text="Number of clusters:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>

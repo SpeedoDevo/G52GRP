@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.TrainingNetworkController">
+   <children>
+      <VBox alignment="CENTER" prefWidth="800" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+   	      <Label alignment="CENTER" layoutY="30" text="Training Network, Please Wait" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+   	         <font>
+   	            <Font size="44.0" />
+   	         </font>
+   	      </Label>
+   	      <ImageView fx:id="spinner" translateY="100" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutY="449.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#cancel" text="Cancel" AnchorPane.bottomAnchor="20.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

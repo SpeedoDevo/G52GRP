@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.TrainingDataSelectionController">
+   <children>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="32.0" prefHeight="58.0" prefWidth="700.0" text="Training Selction">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="277.0" layoutY="139.0" spacing="50.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Slider blockIncrement="1.0" layoutX="280.0" layoutY="140.0" majorTickUnit="10.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" />
+            <Slider blockIncrement="1.0" layoutX="280.0" layoutY="187.0" majorTickUnit="10.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" />
+            <Slider blockIncrement="1.0" layoutX="280.0" layoutY="243.0" majorTickUnit="10.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </VBox>
+      <Label layoutX="8.0" layoutY="139.0" text="Sample Rate" />
+      <Label layoutX="8.0" layoutY="229.0" text="Training Rate" />
+      <Label layoutX="8.0" layoutY="313.0" text="Error Rate" />
+      <HBox layoutX="20.0" layoutY="393.0" spacing="302.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button layoutX="82.0" layoutY="391.0" mnemonicParsing="false" onAction="#goToInputAndOutputSelection" text="I can't do Magic">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="518.0" layoutY="411.0" mnemonicParsing="false" onAction="#goToAdvancedAlgorithmSelection" text="Do Magic">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

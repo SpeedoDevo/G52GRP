@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.ArtResultsController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label alignment="CENTER" layoutY="20.0" text="ART1 Network results" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="20.0" layoutY="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" VBox.vgrow="ALWAYS">
+               <items>
+                  <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" VBox.vgrow="ALWAYS">
+                    <content>
+                      <AnchorPane>
+                           <children>
+                              <Accordion fx:id="clusters" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <SplitPane dividerPositions="0.5">
+                     <items>
+                        <TextArea fx:id="rowDataText" editable="false" minHeight="-Infinity" prefHeight="100.0" wrapText="true">
+                           <font>
+                              <Font name="Consolas" size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                     </items>
+                  </SplitPane>
+               </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

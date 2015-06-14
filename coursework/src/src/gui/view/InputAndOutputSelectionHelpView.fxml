@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="665.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="22.0" text="Input And Output Selection Help" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="60.0" text="This is the input and output selection page it allows you to select what input and expected output you would like. On this page there is a table that display the contents of your file in rows and columns. There is also a slider and two buttons which are “Change File” and “Next”." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="272.0" fitWidth="400.0" layoutX="50.0" layoutY="170.0" pickOnBounds="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <image>
+            <Image url="@InputAndOutputSelectionViewImage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="455.0" text="The slider is used to control in the input and expected output of the neural network when you will see as you control the slider the table columns become bold this to show you which columns are the expected outputs and which columns will be used for the input’s." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="562.0" text="The “Change File” button can be used to change the file for the neural network." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="611.0" text="“Next” will take you onto the next page where you will choose which algorithm to train your neural network. " textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
